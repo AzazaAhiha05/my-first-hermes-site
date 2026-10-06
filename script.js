@@ -1,1 +1,4 @@
-console.log("Сайт готов к работе!");
+function filter(type) {
+    console.log("Фильтр:", type);
+    // Добавим логику позже
+}
