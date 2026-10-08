@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head><script src="https://cdn.tailwindcss.com"></script>
+<head>
     <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Помощь приюту — ЭКОЛАЙФ</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-green-700 p-4 text-white shadow-lg"><div class="container mx-auto flex justify-center gap-6 font-bold">
-        <a href="index.html">Главная</a>
-        <a href="pets.html">Подопечные</a>
-        <a href="donate.html">Помощь</a>
-    </div></nav>
-    <div class="card">
-        <h2>Как помочь приюту</h2>
-        <p>Ваша поддержка — это жизнь для 160 наших собак.</p>
-        <h3>На что нам нужны средства:</h3>
-        <ul>
-            <li>Питание (150 тыс. руб/мес на закупку мяса и корма)</li>
-            <li>Ветеринарные препараты и стерилизация</li>
-            <li>Строительство новых вольеров</li>
-            <li>Хозтовары и инвентарь</li>
-        </ul>
-        <h3>Реквизиты для перевода:</h3>
-        <p><strong>Наименование:</strong> ДРОО ЗАЩИТЫ ЖИВОТНЫХ "ЭКОЛАЙФ"<br>
-        <strong>ИНН:</strong> 0570003010<br>
-        <strong>Расчётный счёт:</strong> 40703810060320004783<br>
-        <strong>Банк:</strong> СТАВРОПОЛЬСКОЕ ОТДЕЛЕНИЕ N5230 ПАО СБЕРБАНК<br>
-        <strong>БИК:</strong> 040702615</p>
-    </div>
+<body class="bg-gray-100 font-sans">
+    <nav class="bg-green-700 p-4 text-white shadow-lg">
+        <div class="container mx-auto flex justify-center gap-6 font-bold uppercase text-sm">
+            <a href="index.html" class="hover:text-green-200">Главная</a>
+            <a href="about.html" class="hover:text-green-200">История</a>
+            <a href="pets.html" class="hover:text-green-200">Подопечные</a>
+            <a href="donate.html" class="underline">Помощь</a>
+        </div>
+    </nav>
+    <main class="container mx-auto p-6 max-w-2xl">
+        <div class="bg-white p-8 rounded-2xl shadow-xl">
+            <h2 class="text-2xl font-bold mb-4 text-green-800">Как помочь приюту</h2>
+            <p class="mb-4">Ваша поддержка — это жизнь для 160 наших собак.</p>
+            <div class="bg-green-50 p-6 rounded-lg mb-6">
+                <h3 class="font-bold mb-2">На что нужны средства:</h3>
+                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                    <li>Питание (150 тыс. руб/мес)</li>
+                    <li>Вет. препараты и стерилизация</li>
+                    <li>Строительство новых вольеров</li>
+                </ul>
+            </div>
+            <div class="border-t pt-4">
+                <p class="font-bold">Реквизиты:</p>
+                <p class="text-sm text-gray-600">ИНН: 0570003010</p>
+                <p class="text-sm text-gray-600">Счёт: 40703810060320004783</p>
+                <p class="text-sm text-gray-600">БИК: 040702615</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

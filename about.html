@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head><script src="https://cdn.tailwindcss.com"></script>
+<head>
     <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>История Эколайф</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-green-700 p-4 text-white shadow-lg"><div class="container mx-auto flex justify-center gap-6 font-bold">
-        <a href="index.html">Главная</a>
-        <a href="about.html">История</a>
-        <a href="pets.html">Подопечные</a>
-        <a href="donate.html">Помощь</a>
-    </div></nav>
-    <article class="card">
-        <h1>Как мы спасаем животных уже 13 лет</h1>
-        <div class="timeline">
-            <h3>2010 — Зарождение</h3>
-            <p>4 человека (Амирали, Татьяна, Ольга, Джамиля). Лечили животных в квартирах.</p>
-            <h3>2016 — Земля и первый кредит</h3>
-            <p>Получили 10 соток, взяли кредит 300к на стройку вольеров.</p>
-            <h3>2017 — Борьба с отстрелами</h3>
-            <p>Добились программы ОСВВ в Махачкале.</p>
-            <h3>2018-2020 — Федеральный закон</h3>
-            <p>Принят закон №498-ФЗ «Об ответственном обращении».</p>
-            <h3>Сегодня</h3>
-            <p>32 вольера, 160+ собак, строим будущее.</p>
+<body class="bg-gray-100 font-sans text-gray-900">
+    <nav class="bg-green-700 p-4 text-white shadow-lg">
+        <div class="container mx-auto flex justify-center gap-6 font-bold uppercase text-sm">
+            <a href="index.html" class="hover:text-green-200">Главная</a>
+            <a href="about.html" class="underline">История</a>
+            <a href="pets.html" class="hover:text-green-200">Подопечные</a>
+            <a href="donate.html" class="hover:text-green-200">Помощь</a>
         </div>
-        <h2>Наша команда</h2>
-        <div class="team">
-            <p><strong>Виктория</strong> — Руководитель, связь с властью</p>
-            <p><strong>Джамиля</strong> — Общественная деятельность, уроки доброты</p>
-            <p><strong>Ольга</strong> — Хозяйство и стройка</p>
-            <p><strong>Юлия</strong> — Ветеринарный учёт</p>
-            <p><strong>Альфия</strong> — Стерилизация</p>
+    </nav>
+    <main class="container mx-auto p-6 max-w-4xl">
+        <div class="bg-white p-8 rounded-2xl shadow-xl">
+            <h1 class="text-3xl font-bold text-green-800 mb-6">Как мы спасаем животных уже 13 лет</h1>
+            <div class="space-y-6 border-l-4 border-green-600 pl-6">
+                <div><h3 class="font-bold text-lg">2010 — Зарождение</h3><p>4 человека лечили животных в квартирах.</p></div>
+                <div><h3 class="font-bold text-lg">2016 — Земля и первый кредит</h3><p>Получили 10 соток, взяли кредит 300к на стройку.</p></div>
+                <div><h3 class="font-bold text-lg">2017 — Борьба с отстрелами</h3><p>Добились программы ОСВВ в Махачкале.</p></div>
+                <div><h3 class="font-bold text-lg">2018-2020 — Федеральный закон</h3><p>Принят закон №498-ФЗ.</p></div>
+            </div>
+            <h2 class="text-2xl font-bold mt-10 mb-6 text-green-800">Наша команда</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-50 p-4 rounded-lg"><strong>Виктория</strong><br>Руководитель, связь с властью</div>
+                <div class="bg-gray-50 p-4 rounded-lg"><strong>Джамиля</strong><br>Общественная деятельность</div>
+                <div class="bg-gray-50 p-4 rounded-lg"><strong>Ольга</strong><br>Хозяйство и стройка</div>
+                <div class="bg-gray-50 p-4 rounded-lg"><strong>Юлия</strong><br>Ветеринарный учёт</div>
+            </div>
         </div>
-    </article>
+    </main>
 </body>
 </html>
