@@ -2,26 +2,51 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Наши подопечные — ЭКОЛАЙФ</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="about.html">История</a>
-        <a href="pets.html">Подопечные</a>
-        <a href="donate.html">Помощь</a>
+<body class="bg-gray-100">
+    <nav class="bg-green-700 p-4 text-white shadow-lg">
+        <div class="container mx-auto flex justify-center gap-6 font-bold">
+            <a href="index.html" class="hover:text-green-200">Главная</a>
+            <a href="pets.html" class="underline">Подопечные</a>
+            <a href="donate.html" class="hover:text-green-200">Помощь</a>
+        </div>
     </nav>
-    <section>
-        <h2>Наши подопечные</h2>
-        <div id="pets-grid" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-            <div class="card" style="width: 300px;">
-                <h3>Симба</h3>
-                <p>Возраст: 1 год, Пол: Ж</p>
-                <p>Преданная и ласковая девочка.</p>
-                <a href="pet-simba.html"><button>Подробнее</button></a>
+    <main class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Наши подопечные</h2>
+        
+        <div class="flex justify-center gap-4 mb-10">
+            <button onclick="filterPets('all')" class="bg-green-600 text-white px-6 py-2 rounded-full shadow-md hover:bg-green-700 transition">Все</button>
+            <button onclick="filterPets('dog')" class="bg-white border-2 border-green-600 text-green-600 px-6 py-2 rounded-full shadow-sm hover:bg-green-50 transition">Собаки</button>
+            <button onclick="filterPets('cat')" class="bg-white border-2 border-green-600 text-green-600 px-6 py-2 rounded-full shadow-sm hover:bg-green-50 transition">Кошки</button>
+        </div>
+
+        <div id="pets-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Карточка Симбы -->
+            <div class="pet-card bg-white rounded-2xl shadow-xl overflow-hidden" data-type="cat">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-gray-800">Симба</h3>
+                    <p class="text-gray-600 text-sm mt-1">Возраст: 1 год</p>
+                    <a href="pet-simba.html" class="block mt-4 bg-green-600 text-white text-center py-2 rounded-lg font-semibold hover:bg-green-700">Подробнее</a>
+                </div>
             </div>
         </div>
-    </section>
+    </main>
+
+    <script>
+        function filterPets(type) {
+            const cards = document.querySelectorAll('.pet-card');
+            cards.forEach(card => {
+                if (type === 'all' || card.getAttribute('data-type') === type) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>

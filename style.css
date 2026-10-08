@@ -1,8 +1,7 @@
-:root { --primary: #2d5a27; --accent: #f8f9fa; }
-body { font-family: sans-serif; background: var(--accent); margin: 0; }
-nav { background: var(--primary); padding: 1rem; text-align: center; }
-nav a { color: white; margin: 0 10px; text-decoration: none; }
-header { padding: 4rem 1rem; text-align: center; }
-.stats { display: flex; justify-content: center; gap: 40px; padding: 2rem; background: var(--primary); color: white; }
-.card { background: white; padding: 2rem; border-radius: 15px; max-width: 800px; margin: 2rem auto; }
-.timeline { border-left: 2px solid var(--primary); padding-left: 20px; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-gray-50 text-gray-900; }
+}
