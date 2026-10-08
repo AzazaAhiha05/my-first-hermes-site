@@ -4,58 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приют «ЭКОЛАЙФ» — помощь животным</title>
-    <!-- Tailwind + DaisyUI for professional UI components -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen bg-base-100">
+<body class="bg-[#fdfbf7] text-gray-800">
 
     <!-- Navbar -->
-    <div class="navbar bg-base-100 shadow-lg px-4 md:px-20">
+    <div class="navbar bg-white shadow-sm sticky top-0 z-50 px-4 md:px-20">
         <div class="flex-1">
-            <a class="text-2xl font-bold text-green-700">ЭКОЛАЙФ</a>
+            <a class="text-2xl font-black text-green-700 tracking-tight">ЭКОЛАЙФ</a>
         </div>
-        <div class="flex-none gap-2">
-            <a href="index.html" class="btn btn-ghost btn-sm">Главная</a>
-            <a href="about.html" class="btn btn-ghost btn-sm">История</a>
-            <a href="pets.html" class="btn btn-ghost btn-sm">Подопечные</a>
-            <a href="donate.html" class="btn btn-primary btn-sm text-white">Помочь</a>
+        <div class="flex-none gap-4">
+            <a href="index.html" class="font-bold text-green-700">Главная</a>
+            <a href="about.html" class="font-bold text-gray-600 hover:text-green-700">История</a>
+            <a href="pets.html" class="font-bold text-gray-600 hover:text-green-700">Подопечные</a>
+            <a href="donate.html" class="btn btn-warning btn-sm text-white rounded-full">Помочь</a>
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <div class="hero min-h-[60vh] bg-base-200">
-        <div class="hero-content text-center">
-            <div class="max-w-md">
-                <h1 class="text-5xl font-bold text-green-800">Более 13 лет спасаем жизни</h1>
-                <p class="py-6">В Дагестане, где горы встречаются с морем, мы учим людей и животных жить в гармонии.</p>
-                <a href="donate.html" class="btn btn-primary text-white btn-lg">Стать героем для питомца</a>
+    <!-- Hero -->
+    <div class="hero py-20 bg-gradient-to-b from-green-50 to-white">
+        <div class="hero-content text-center flex-col">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">«В Дагестане, где горы встречаются с морем, мы учим людей и животных жить в гармонии»</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mb-8">Более 13 лет мы спасаем жизни. Благотворительный фонд защиты животных «ЭКОЛАЙФ» — ваша поддержка дает шанс на новую жизнь.</p>
+            <div class="flex gap-4">
+                <a href="donate.html" class="btn btn-success btn-lg text-white rounded-full px-8">Стать героем</a>
+                <a href="pets.html" class="btn btn-outline btn-lg rounded-full px-8">Наши питомцы</a>
             </div>
         </div>
     </div>
 
-    <!-- Stats Section -->
-    <div class="stats stats-vertical lg:stats-horizontal shadow w-full p-4 bg-green-700 text-white rounded-none">
-        <div class="stat place-items-center">
-            <div class="stat-value">300+</div>
-            <div class="stat-desc text-green-100">Животных спасено</div>
-        </div>
-        <div class="stat place-items-center">
-            <div class="stat-value">200+</div>
-            <div class="stat-desc text-green-100">Нашли семьи</div>
-        </div>
-        <div class="stat place-items-center">
-            <div class="stat-value">32</div>
-            <div class="stat-desc text-green-100">Вольера</div>
+    <!-- Stats Grid -->
+    <div class="container mx-auto px-6 py-16">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-green-50 text-center hover:scale-105 transition-transform">
+                <div class="text-4xl mb-4">🐕</div>
+                <div class="text-4xl font-black text-green-700">200+</div>
+                <div class="text-gray-500 font-medium">собак в приюте</div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-green-50 text-center hover:scale-105 transition-transform">
+                <div class="text-4xl mb-4">🐈</div>
+                <div class="text-4xl font-black text-green-700">30+</div>
+                <div class="text-gray-500 font-medium">кошек под опекой</div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-green-50 text-center hover:scale-105 transition-transform">
+                <div class="text-4xl mb-4">❤️</div>
+                <div class="text-4xl font-black text-green-700">300+</div>
+                <div class="text-gray-500 font-medium">спасено животных</div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-lg border border-green-50 text-center hover:scale-105 transition-transform">
+                <div class="text-4xl mb-4">🏠</div>
+                <div class="text-4xl font-black text-green-700">200+</div>
+                <div class="text-gray-500 font-medium">пристроено в семьи</div>
+            </div>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer p-10 bg-neutral text-neutral-content mt-10">
-        <aside>
-            <p>ДРОО «ЭКОЛАЙФ»<br>Спасаем животных с 2011 года</p>
-        </aside>
-    </footer>
 
 </body>
 </html>
