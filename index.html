@@ -1,29 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head><script src="https://cdn.tailwindcss.com"></script>
+<html lang="ru" data-theme="emerald">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приют «ЭКОЛАЙФ» — помощь животным</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind + DaisyUI for professional UI components -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-green-700 p-4 text-white shadow-lg"><div class="container mx-auto flex justify-center gap-6 font-bold">
-        <a href="index.html">Главная</a>
-        <a href="about.html">История</a>
-        <a href="pets.html">Подопечные</a>
-        <a href="donate.html">Помощь</a>
-        <a href="news.html">Акции</a>
-    </div></nav>
-    <header>
-        <h1>Приют «ЭКОЛАЙФ»</h1>
-        <p>Благотворительная организация помощи бездомным животным</p>
-        <p>Мы не получаем господдержки и существуем исключительно на пожертвования.</p>
-        <a href="donate.html"><button>Стать героем для питомца</button></a>
-    </header>
-    <section class="stats">
-        <div class="stat-item" data-val="300"><h3>300+</h3><p>Спасено</p></div>
-        <div class="stat-item" data-val="200"><h3>200+</h3><p>Пристроено</p></div>
-        <div class="stat-item" data-val="32"><h3>32</h3><p>Вольера</p></div>
-    </section>
+<body class="min-h-screen bg-base-100">
+
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-lg px-4 md:px-20">
+        <div class="flex-1">
+            <a class="text-2xl font-bold text-green-700">ЭКОЛАЙФ</a>
+        </div>
+        <div class="flex-none gap-2">
+            <a href="index.html" class="btn btn-ghost btn-sm">Главная</a>
+            <a href="about.html" class="btn btn-ghost btn-sm">История</a>
+            <a href="pets.html" class="btn btn-ghost btn-sm">Подопечные</a>
+            <a href="donate.html" class="btn btn-primary btn-sm text-white">Помочь</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero min-h-[60vh] bg-base-200">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <h1 class="text-5xl font-bold text-green-800">Более 13 лет спасаем жизни</h1>
+                <p class="py-6">В Дагестане, где горы встречаются с морем, мы учим людей и животных жить в гармонии.</p>
+                <a href="donate.html" class="btn btn-primary text-white btn-lg">Стать героем для питомца</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats stats-vertical lg:stats-horizontal shadow w-full p-4 bg-green-700 text-white rounded-none">
+        <div class="stat place-items-center">
+            <div class="stat-value">300+</div>
+            <div class="stat-desc text-green-100">Животных спасено</div>
+        </div>
+        <div class="stat place-items-center">
+            <div class="stat-value">200+</div>
+            <div class="stat-desc text-green-100">Нашли семьи</div>
+        </div>
+        <div class="stat place-items-center">
+            <div class="stat-value">32</div>
+            <div class="stat-desc text-green-100">Вольера</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer p-10 bg-neutral text-neutral-content mt-10">
+        <aside>
+            <p>ДРОО «ЭКОЛАЙФ»<br>Спасаем животных с 2011 года</p>
+        </aside>
+    </footer>
+
 </body>
 </html>
